@@ -1,0 +1,292 @@
+:root{
+  --bg: #bfc8d1;
+  --clr: #d1deec;
+  --fground: #f1f3f5;
+  --shadow: #76767663;
+  --black: #0E0C0A;
+}body{
+  background-color: var(--bg);
+}
+.DO{
+  position: absolute;
+  top: 0%;
+  left: 44%;
+}
+.Doraemon{
+  width: 150px;
+}
+.intro {
+  font-size: 30px;
+  position: absolute;
+  top: 30%;
+  left: 43%;
+}
+.p1{
+  font-size: 25px;
+  position: absolute;
+  top: 40%;
+  left: 42%;
+}
+.n1{
+  
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 43%;
+
+}
+.i1{
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  border: 5.1px solid  #d9e0e6 ;
+  direction: none;
+  border-radius: 50px;
+  background-color: #d9e0e6;
+  box-shadow:  5.4px 10.7px 10.7px hsl(0deg 0% 0% / 0.33);
+}
+.Some{
+  font-size: 25px;
+  position: absolute;
+  top: 63%;
+  left: 38%;
+  display: none;
+}
+.i2{
+  position: absolute;
+  top: 68%;
+  left: 43%;
+  display: none;
+}
+.b1{
+  position: absolute;
+  top: 55%;
+  left: 43%;
+  font-size: 20px;
+}
+.b2{
+  position: absolute;
+  top: 78%;
+  left: 43%;
+}
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.cal{
+  position: absolute;
+  top: 50%;
+  left: 39%;
+}
+.heart{
+  display: none;
+  font-size: 250px;
+}
+
+
+.persent{
+  display: none;
+  font-size: 50px;
+  position: absolute;
+  top: 52%;
+  left: 40%;
+}
+
+.masg{
+  display: none;
+  font-size: 40px;
+  position: absolute;
+  top:120%;
+  left: 36%;
+}
+.masg2{
+  display: none;
+  font-size: 40px;
+  position: absolute;
+  top:90%;
+  left: 36%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  height: 1vh;
+}
+
+.value {
+  font-size: 40px;
+  display: block;
+  font-weight: bold;
+  color:black;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+@media (max-width: 991px) {
+  .max-width{
+      padding: 0 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .DO{
+  position: absolute;
+  top: 0%;
+  left: 35%;
+}
+.Doraemon{
+  width: 80px;
+}
+.intro {
+  font-size: 30px;
+  position: absolute;
+  top: 20%;
+  left: 14%;
+}
+.p1{
+  font-size: 25px;
+  position: absolute;
+  top: 28%;
+  left: 12%;
+}
+.n1{
+  
+  align-items: center;
+  position: absolute;
+  top: 34%;
+  left: 19%;
+}
+.i1{
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  border: 5.1px solid  #d9e0e6 ;
+  direction: none;
+  border-radius: 50px;
+  background-color: #d9e0e6;
+  box-shadow:  5.4px 10.7px 10.7px hsl(0deg 0% 0% / 0.33);
+}
+
+.Some{
+  font-size: 20px;
+  position: absolute;
+  top: 58%;
+  left: 5%;
+  display: none;
+}
+.i2{
+  position: absolute;
+  top: 69%;
+  left: 19%;
+  display: none;
+}
+.b1{
+  position: absolute;
+  top: 46%;
+  left: 19%;
+  font-size: 20px;
+}
+.b2{
+  position: absolute;
+  top: 150%;
+  left: 19%;
+}
+.b3{
+  position: absolute;
+  top: 80%;
+  left: 19%;
+}
+.cal{
+  position: absolute;
+  top: 40%;
+  left: 0%;
+}
+.heart{
+  font-size: 250px;
+}
+.massage{
+  position: absolute;
+  top: 120%;
+  left: 40%;
+  font-size: 30px;
+}
+.m1{
+  font-size: 40px;
+  position: absolute;
+  left: 5%;
+  top: -110%;
+}
+.masg{
+  display: none;
+  font-size: 40px;
+  position: absolute;
+  top:130%;
+  left: 6%;
+}
+.masg2{
+  display: none;
+  font-size: 25px;
+  position: absolute;
+  top:90%;
+  left: 5%;
+}
+.impm{
+  position: absolute;
+  top: 90%;
+  left: 10%;
+}
+}

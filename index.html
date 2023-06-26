@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="DO">
+    <img class="Doraemon" src="/img/Doraemon.png" alt="">
+  </div>
+  <dev class="intro">
+      <p2>Hi, I am Doraemon</p1>
+  </dev>
+  <form action="https://formspree.io/f/xvojpapp"
+  method="POST">
+  <label>
+  <div class="n1">
+    <input class="i1" type="text"  id="n1"name="n1"/>
+  </div>
+  </label>
+<label>
+  <div class="i2"id="textField1">
+    <input class="i1" type="text"  id="n2"name="n2"/>
+  </div>
+</label>
+<label>
+  <div class="b3">
+    <button type="submit" class="glow-on-hover"id="b3"style="font-size:20px">Click and GO Down &#128071 &#128591</button>
+    </div>
+  </label>
+
+  </form>
+  <div class="b2">
+    <button class="glow-on-hover" onclick="n1()"id="b2">Calculate 🥰</button>
+    
+  </div>
+ 
+    <p8 class="impm"id="impm">Please Come Back after click and go down</p8>
+  <p1 class="p1">
+    Enter Your Cute Name &#x1F970
+  </p1>
+    
+    <div class="b1">
+      <button class="glow-on-hover" onclick="displayText();displayText1();">Next &#128071</button>
+    </div>
+    
+    <div class="Some"id="textField">
+      Enter name of Person that's you Like &#129325
+    </div>
+   
+    
+
+    <div class="cal"id="">
+      <p class="heart"id="he">&#x1F497;</p>
+      <div1 id="num"></div1>
+      <div class="persent"id="per">
+        <div class="content">
+          <div class="value" vlu="100">0</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class ="masg" id="mas">
+      Your Love is real 	&#128525; &#x1F49E; &#x1F970;
+    </div>
+    <div class="masg2" id="mas2">
+      Sory but this love is not real!
+      realod to test again
+    </div>
+
+
+    <script>
+
+function n1(){
+    var v1 = document.getElementById('n1').value;
+    var v2 = document.getElementById('n2').value;
+    
+      if (v1 == 'preeti'&& v2 == 'nikhil') {
+        document.getElementById('mas').style.display = 'block';
+        document.getElementById('impm').style.display = 'none';
+        displayText();
+        displayText1();
+        displayHeart(); 
+        displayNum(); 
+        displayPersent();
+        count();
+        
+      }
+      else if (v1 == 'Preeti'&& v2 == 'Nikhil'){
+        document.getElementById('mas').style.display = 'block';
+        document.getElementById('impm').style.display = 'none';
+        displayText();
+        displayText1();
+        displayHeart(); 
+        displayNum(); 
+        displayPersent();
+        count();
+      }
+      else if (v1 == 'nikhil'&& v2 == 'preeti'){
+        document.getElementById('mas').style.display = 'block';
+        document.getElementById('impm').style.display = 'none';
+        displayText();
+        displayText1();
+        displayHeart(); 
+        displayNum(); 
+        displayPersent();
+        count();
+      }
+      else if (v1 == 'Nikhil'&& v2 == 'Preeti'){
+        document.getElementById('mas').style.display = 'block';
+        document.getElementById('impm').style.display = 'none';
+        displayText();
+        displayText1();
+        displayHeart(); 
+        displayNum(); 
+        displayPersent();
+        count();
+      }
+      else if (v1 == 'Preeti'&& v2 == 'nikhil'){
+        document.getElementById('mas').style.display = 'block';
+        document.getElementById('impm').style.display = 'none';
+        displayText();
+        displayText1();
+        displayHeart(); 
+        displayNum(); 
+        displayPersent();
+        count();
+      }
+      else if (v1 == 'preeti'&& v2 == 'Nikhil'){
+        document.getElementById('mas').style.display = 'block';
+        document.getElementById('impm').style.display = 'none';
+        displayText();
+        displayText1();
+        displayHeart(); 
+        displayNum(); 
+        displayPersent();
+        count();
+      }
+      else if (v1 == 'Nikhil'&& v2 == 'preeti'){
+        document.getElementById('mas').style.display = 'block';
+        document.getElementById('impm').style.display = 'none';
+        displayText();
+        displayText1();
+        displayHeart(); 
+        displayNum(); 
+        displayPersent();
+        count();
+      }
+      else if (v1 == 'nikhil'&& v2 == 'Preeti'){
+        document.getElementById('mas').style.display = 'block';
+        document.getElementById('impm').style.display = 'none';
+        displayText();
+        displayText1();
+        displayHeart(); 
+        displayNum(); 
+        displayPersent();
+        count();
+      }
+      else {
+        document.getElementById('mas').style.display = 'none'; 
+        document.getElementById('impm').style.display = 'block'; 
+      }
+    
+}
+function count() {
+const counters = document.querySelectorAll('.value');
+const speed = 1000;
+
+counters.forEach( counter => {
+   const animate = () => {
+      const value = +counter.getAttribute('vlu');
+      const data = +counter.innerText;
+     
+      const time = value / speed;
+     if(data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 100);
+        }else{
+          counter.innerText = value;
+        }
+     
+   }
+   animate();
+   
+});
+}
+
+
+    function displayText() {
+        var text = document.getElementById("textField");
+        text.style.display = "block";
+    }
+    function displayText1() {
+        var text = document.getElementById("textField1");
+        text.style.display = "block";
+    }
+
+    function displayHeart() {
+        var text = document.getElementById("he");
+        text.style.display = "block";
+    }
+    function displayNum() {
+        var text = document.getElementById("num");
+        text.style.display = "block";
+    }
+    function displayPersent() {
+        var text = document.getElementById("per");
+        text.style.display = "block";
+    }
+   
+    </script>
+</body>
+</html>
